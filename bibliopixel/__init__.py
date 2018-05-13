@@ -25,6 +25,7 @@ BiblioPixel is a pure Python 3 library for all your LED animations needs. Throug
 BiblioPixel allows many different display geometries. Many of the existing hardware models are LED strips, matrixes or circles, but there are no real limits on what the output device can be, due to the output drivers model.
 """
 __author__ = 'Adam Haile, Tom Swirly'
+__author_email__ = 'adam@maniacallabs.com'
 __copyright__ = 'Copyright 2018, Maniacal Labs'
 __license__ = 'MIT License'
 __url__ = 'https://github.com/maniacallabs/bibliopixel'
