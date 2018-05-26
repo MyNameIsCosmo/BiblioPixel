@@ -67,7 +67,6 @@ pages:
         - Projects: user-guide/projects.md
         - Using Drivers:
             - Index: drivers/index.md
-            - DriverBase: drivers/driverbase.md
             - Dummy: drivers/dummy.md
             - Hue: drivers/hue.md
             - Network: drivers/network.md
@@ -77,7 +76,6 @@ pages:
             - SimPixel: drivers/simpixel.md
         - Using Layouts:
             - Index: layouts/index.md
-            - Base Layout: layouts/base.md
             - Circle: layouts/circle.md
             - Cube: layouts/cube.md
             - Matrix: layouts/matrix.md
@@ -87,10 +85,16 @@ pages:
         - Threaded Updates: layouts/threaded.md
     - Developers:
         - Overview: developers/index.md
-        - Writing Animations: developers/animations.md
-        - Writing Drivers: developers/drivers.md
-        - Writing Layouts: developers/layouts.md
-        - Writing Projects: developers/projects.md
+        - Animations: 
+            - Writing Animations: developers/animations.md
+        - Drivers:
+            - DriverBase: drivers/driverbase.md
+            - Writing Drivers: developers/drivers.md
+        - Layouts: 
+            - Base Layout: layouts/base.md
+            - Writing Layouts: developers/layouts.md
+        - Projects: 
+            - Writing Projects: developers/projects.md
         - Colors:
             - Colors Module: developers/colors/colors_module.md
             - HSV Colors: developers/colors/hsv_colors.md
