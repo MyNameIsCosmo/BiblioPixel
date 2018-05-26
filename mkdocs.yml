@@ -52,20 +52,30 @@ markdown_extensions:
     - pymdownx.tilde # strike-through/cross-out text
 
 pages:
-    - Home: index.md
-    - User Guide:
-        - userguide.md
+    - Home:
+        - Home: index.md
         - Installation: installation.md
+        - Setup:
+            - Display Setup: setup/display.md
+            - SPI Setup: setup/spi.md
         - Getting Started:
+            - Basics: user-guide/basics.md
             - Demos: user-guide/demos.md
             - CLI: user-guide/cli.md
             - Projects: user-guide/projects.md
-        - Developers:
-            - Drivers: developers/drivers.md
-            - Layouts: developers/layouts.md
-            - Projects: developers/projects.md
-            - Contributing: developers/contributing.md
+        - Troubleshooting: troubleshooting.md
+        - FAQ: faq.md
+    - Developers:
+        - Overview: developers/index.md
+        - Animations: developers/animations.md
+        - Drivers: developers/drivers.md
+        - Layouts: developers/layouts.md
+        - Projects: developers/projects.md
+        - Topics:
+            - Using Numpy: developers/topics/using-numpy.md
+        - Contributing: developers/contributing.md
         - Migration:
             - '2.x to 3.x': migration/2.x-to-3.x.md
             - '3.x to 4.x': migration/3.x-to-4.x.md
     - About: about.md
+    - Changelog: changelog.md
