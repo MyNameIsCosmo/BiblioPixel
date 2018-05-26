@@ -55,6 +55,7 @@ pages:
     - Home:
         - Home: index.md
         - Installation: installation.md
+        - Quick Start: quickstart.md
         - Setup:
             - Display Setup: setup/display.md
             - SPI Setup: setup/spi.md
