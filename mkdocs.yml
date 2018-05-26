@@ -21,7 +21,7 @@ theme:
         text: Roboto
         code: Roboto Mono
     feature:
-        tabs: true
+        tabs: false
     favicon: assests/images/favicon.png
 
 # https://squidfunk.github.io/mkdocs-material/extensions
@@ -52,31 +52,58 @@ markdown_extensions:
     - pymdownx.tilde # strike-through/cross-out text
 
 pages:
-    - Home:
-        - Home: index.md
+    - Home: index.md
+    - Setup:
         - Installation: installation.md
+        - Display Setup: setup/display.md
+        - SPI Setup: setup/spi.md
+        - All Pixel: setup/all_pixel.md
+    - Getting Started:
         - Quick Start: quickstart.md
-        - Setup:
-            - Display Setup: setup/display.md
-            - SPI Setup: setup/spi.md
-        - Getting Started:
-            - Basics: user-guide/basics.md
-            - Demos: user-guide/demos.md
-            - CLI: user-guide/cli.md
-            - Projects: user-guide/projects.md
-        - Troubleshooting: troubleshooting.md
-        - FAQ: faq.md
+        - Basics: user-guide/basics.md
+        - Demos: user-guide/demos.md
+        - CLI: user-guide/cli.md
+        - Projects: user-guide/projects.md
+    - Getting Involved:
+        - Using Drivers:
+            - Index: drivers/index.md
+            - DriverBase: drivers/driverbase.md
+            - Dummy: drivers/dummy.md
+            - Hue: drivers/hue.md
+            - Network: drivers/network.md
+            - PiWS281X: drivers/PiWs281X.md
+            - Serial: drivers/serial.md
+            - SPI: drivers/spi.md
+            - SimPixel: drivers/simpixel.md
+        - Using Layouts:
+            - Index: layouts/index.md
+            - Base Layout: layouts/base.md
+            - Circle: layouts/circle.md
+            - Cube: layouts/cube.md
+            - Matrix: layouts/matrix.md
+            - POV: layouts/POV.md
+            - Strip: layouts/strip.md
+        - Using Multiple Drivers: layouts/multiple.md
+        - Threaded Updates: layouts/threaded.md
+    - Troubleshooting: troubleshooting.md
+    - FAQ: faq.md
+    - About: about.md
     - Developers:
         - Overview: developers/index.md
-        - Animations: developers/animations.md
-        - Drivers: developers/drivers.md
-        - Layouts: developers/layouts.md
-        - Projects: developers/projects.md
+        - Writing Animations: developers/animations.md
+        - Writing Drivers: developers/drivers.md
+        - Writing Layouts: developers/layouts.md
+        - Writing Projects: developers/projects.md
+        - Colors:
+            - Colors Module: developers/colors/colors_module.md
+            - HSV Colors: developers/colors/hsv_colors.md
+            - Gamma Correction: developers/colors/gamma_correction.md
+        - Logging: developers/logging.md
         - Topics:
-            - Using Numpy: developers/topics/using-numpy.md
+            - Using Numpy: developers/topics/using_numpy.md
         - Contributing: developers/contributing.md
         - Migration:
-            - '2.x to 3.x': migration/2.x-to-3.x.md
-            - '3.x to 4.x': migration/3.x-to-4.x.md
-    - About: about.md
+            - '2.x to 3.x': migration/2.x_to_3.x.md
+            - '3.x to 4.x': migration/3.x_to_4.x.md
+    - API: api/placeholder.md
     - Changelog: changelog.md
