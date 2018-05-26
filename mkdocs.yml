@@ -53,18 +53,18 @@ markdown_extensions:
 
 pages:
     - Home: index.md
-    - Setup:
-        - Installation: installation.md
-        - Display Setup: setup/display.md
-        - SPI Setup: setup/spi.md
-        - All Pixel: setup/all_pixel.md
+    - Quick Start: quickstart.md
     - Getting Started:
-        - Quick Start: quickstart.md
+        - Installation: installation.md
         - Basics: user-guide/basics.md
+        - Hardware Setup:
+            - Display Setup: setup/display.md
+            - SPI Setup: setup/spi.md
+            - All Pixel: setup/all_pixel.md
         - Demos: user-guide/demos.md
+    - Getting Involved:
         - CLI: user-guide/cli.md
         - Projects: user-guide/projects.md
-    - Getting Involved:
         - Using Drivers:
             - Index: drivers/index.md
             - DriverBase: drivers/driverbase.md
@@ -85,9 +85,6 @@ pages:
             - Strip: layouts/strip.md
         - Using Multiple Drivers: layouts/multiple.md
         - Threaded Updates: layouts/threaded.md
-    - Troubleshooting: troubleshooting.md
-    - FAQ: faq.md
-    - About: about.md
     - Developers:
         - Overview: developers/index.md
         - Writing Animations: developers/animations.md
@@ -105,5 +102,8 @@ pages:
         - Migration:
             - '2.x to 3.x': migration/2.x_to_3.x.md
             - '3.x to 4.x': migration/3.x_to_4.x.md
-    - API: api/placeholder.md
+        - API: api/placeholder.md
+    - Troubleshooting: troubleshooting.md
+    - FAQ: faq.md
+    - About: about.md
     - Changelog: changelog.md
