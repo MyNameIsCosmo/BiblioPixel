@@ -1,3 +1,6 @@
+import operator
+
+
 class Command(object):
 
     ''' A base class for Command parsers
@@ -50,8 +53,8 @@ class Command(object):
 
 
 def __get_available_commands(command_class):
-    commands = command_class.__subclasses__()
-    for cmd in list(commands):
+    commands = sorted(command_class.__subclasses__(), key=operator.attrgetter('name'))
+    for cmd in commands:
         commands.extend(__get_available_commands(cmd))
     return commands
 
