@@ -1,8 +1,8 @@
 class Command(object):
 
-    """ A base class for Command parsers
+    ''' A base class for Command parsers
     This class layout may or may not help organization and overall functionality of the command line interface operations
-    """
+    '''
     name = ''
     description = ''
     parser = None
@@ -11,33 +11,33 @@ class Command(object):
         self.args = args
 
     def main(self):
-        """ Main method called when the command is called. """
+        ''' Main method called when the command is called. '''
         raise NotImplementedError()
 
     def run(self):
-        """ Calls main() and handles interrupts and exceptions """
+        ''' Calls main() and handles interrupts and exceptions '''
         try:
             status = self.main()
         except KeyboardInterrupt as e:
             status = 1
         except Exception as e:
-            status = "{} failed to run with exception: {}".format(self.name, e)
+            status = '{} failed to run with exception: {}'.format(self.name, e)
         return(status)
 
     @classmethod
     def add_arguments(cls):
-        """ Add arguments to the parser of cls
+        ''' Add arguments to the parser of cls
 
         Usage:
-          cls.parser.add_argument("-d", "--detach", ...)
+          cls.parser.add_argument('-d', '--detach', ...)
 
-        """
+        '''
         # TODO(Cosmo): Add subparser capabilities
         pass
 
     @classmethod
     def create_parser(cls, subparsers):
-        """ Creates an argparse parser for the class and returns the parser. """
+        ''' Creates an argparse parser for the class and returns the parser. '''
         cls.parser = subparsers.add_parser(cls.name, help=cls.description)
         cls.parser.set_defaults(command_class=cls)
         cls.add_arguments()
@@ -45,7 +45,7 @@ class Command(object):
 
     @classmethod
     def help(cls):
-        """ Print the help of a class """
+        ''' Print the help of a class '''
         cls.parser.print_help()
 
 
