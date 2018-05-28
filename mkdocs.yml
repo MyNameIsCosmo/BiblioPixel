@@ -39,7 +39,7 @@ markdown_extensions:
     - pymdownx.critic # Allow highlighting, text addition/deletion highlights
     - pymdownx.details # Admonition-style blocks
     - pymdownx.emoji: # Emojis!
-        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+        emoji_generator: '!!python/name:pymdownx.emoji.to_svg'
     - pymdownx.inlinehilite # Inline code highlighting
     - pymdownx.keys # Styling keyboard keys
     - pymdownx.magiclink # Automatically detect and generate links
